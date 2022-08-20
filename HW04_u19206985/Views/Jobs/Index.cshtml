@@ -1,0 +1,102 @@
+﻿@using HW04_u19206985.Models
+@model List<Jobs>
+@{
+    ViewBag.Title = "Jobs";
+}
+
+<head>
+    <style>
+        body{
+            background-color: white;
+        }
+        .image {
+            width: 100%;
+            height: 500px;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        .image img {
+            width: 100%;
+            height: 400px;
+            /**/
+            opacity: 0.5;
+        }
+        .image h1 {
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin-top: -20px;
+            font-size: 50px;
+        }
+        .section{
+            margin-top: 400px;
+            justify-content: center;
+        }
+        .vacancy {
+            width: 200px;
+            height: 200px;
+            border: 0.5px ridge grey;
+            background-color: lightyellow;
+        }
+        .flex{
+            margin-top: 50px;
+            display: flex;
+            text-align: center;
+        }
+        .flex a{
+            margin-right: 80px;
+            text-decoration: none;
+        }
+        .vacancy p {
+            padding-top: 80px;
+            font-size: 20px;
+            color: #292C45;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="~/Images/Jobs-page/top-img.jpeg">
+        <h1>We are hiring</h1>
+    </div>
+    <div class="section">
+        <div class="col-md-12 flex">
+            @foreach (var job in Model)
+            {
+                if (job.GetType() == typeof(DataScientist))
+                {
+                    DataScientist myscientist = (DataScientist)job;
+                    <a href="/DataScientist/Index"><div class="vacancy"><p>@myscientist.Name</p></div></a>
+                }
+            }
+            @foreach (var job in Model)
+            {
+                if (job.GetType() == typeof(DataAnalyst))
+                {
+                    DataAnalyst myanalystone = (DataAnalyst)job;
+                    <a href="/DataAnalyst/Index"><div class="vacancy"><p>@myanalystone.Name</p></div></a>
+                }
+            }
+            @foreach (var job in Model)
+            {
+                if (job.GetType() == typeof(IndustryAnalyst))
+                {
+                    IndustryAnalyst myanalyst = (IndustryAnalyst)job;
+                    <a href="/IndustryAnalyst/Index"><div class="vacancy"><p>@myanalyst.Name</p></div></a>
+                }
+            }
+            @foreach (var job in Model)
+            {
+                if (job.GetType() == typeof(SeniorManager))
+                {
+                    SeniorManager mymanager = (SeniorManager)job;
+                    <a href="/SeniorManager/Index"><div class="vacancy"><p>@mymanager.Name</p></div></a>
+                }
+            }
+        </div>
+    </div>
+</body>
+

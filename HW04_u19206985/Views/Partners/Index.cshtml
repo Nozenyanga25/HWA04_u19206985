@@ -1,0 +1,386 @@
+﻿
+@{
+    ViewBag.Title = "Partners";
+}
+
+<head>
+    <style>
+        body{
+            background-color: white;
+        }
+        .image {
+            width: 100%;
+            height: 300px;
+            background-color: #292C45;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+        .image h1 {
+            text-align: center;
+            color: white;
+            font-size: 100px;
+            margin-top: 100px;
+        }
+        .desc {
+            width: 100%;
+            height: 300px;
+            background-color: #a2bae0;
+            position: absolute;
+            margin-top: 300px;
+            left: 0;
+            right: 0;
+            /**/
+            display: flex;
+        }
+        .first{
+            width: 500px;
+            text-align: center;
+            margin-left: 100px;
+        }
+        .second{
+            width: 500px;
+            text-align: center;
+            margin-left: 100px;
+        }
+        .business-part{
+            margin-top: 650px;
+        }
+        .business-part .header{
+            width: 1200px;
+            text-align: center;
+        }
+        .foundations-part .header {
+            width: 1200px;
+            text-align: center;
+        }
+        .foundations-part{
+            margin-top: 1000px;
+        }
+        .business-part .image-grid{
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .foundations-part .bottom-grid {
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            width: 1200px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        .business-part .image-grid img {
+            width: 150px;
+            height: 150px;
+            border: 1px ridge grey;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            opacity: 0.6;
+            object-fit: cover;
+            object-position: center;
+        }
+        img:hover{
+            opacity: 1;
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        .p:hover img{
+            display: none;
+        }
+        .p:hover:before {
+            width: 100%;
+            height: 150px;
+            border: 1px solid black;
+            background-color: darkgoldenrod;
+            content: "Partner";
+            text-align: center;
+            padding-left: 50px;
+            color: black;
+            text-decoration: none;
+        }
+        .f:hover img{
+            display: none;
+        }
+        .f:hover:before {
+            width: 100%;
+            height: 150px;
+            border: 1px solid black;
+            background-color: darkolivegreen;
+            content: "Foundation";
+            text-align: center;
+            padding-left: 50px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <br />
+    <br />
+    <div class="image">
+        <h1>P&nbsp;a&nbsp;r&nbsp;t&nbsp;n&nbsp;e&nbsp;r&nbsp;s</h1>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="desc">
+        <div class="first">
+            <br />
+            <br />
+            <br />
+            <h2>Business Partners</h2>
+            <p>These businesses have made forest landscape restoration part of their strategies.</p>
+        </div>
+        <div class="second">
+            <br />
+            <br />
+            <br />
+            <h2>Foundations And Donors</h2>
+            <p>These trusts, foundations and other organisations are making important contributions to our restoration work across the world.</p>
+        </div>
+    </div>
+    <div class="flex">
+        <div class="business-part">
+            <div class="image-grid">
+                <a class="p" href="https://www.weforest.org/partner/brabantia"><img src="~/Images/Partners-page/one.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/illustrationx-ltd"><img src="~/Images/Partners-page/two.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/nike"><img src="~/Images/Partners-page/three.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/swift"><img src="~/Images/Partners-page/four.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/insights"><img src="~/Images/Partners-page/five.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/delaware"><img src="~/Images/Partners-page/six.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/accenture"><img src="~/Images/Partners-page/seven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/shell"><img src="~/Images/Partners-page/eight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/wex-europe-services"><img src="~/Images/Partners-page/nine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ucb-biopharma"><img src="~/Images/Partners-page/ten.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/shopify"><img src="~/Images/Partners-page/eleven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/global-climate-institute"><img src="~/Images/Partners-page/twelve.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/duvel"><img src="~/Images/Partners-page/thirteen.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/geoaxioma"><img src="~/Images/Partners-page/fourteen.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/candriam-investors-group"><img src="~/Images/Partners-page/fifteen.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/radioeins"><img src="~/Images/Partners-page/sixteen.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/dazzle-dry"><img src="~/Images/Partners-page/seventeen.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/saye"><img src="~/Images/Partners-page/eighteen.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/circular-computing"><img src="~/Images/Partners-page/nineteen.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/weishaupt-design-group"><img src="~/Images/Partners-page/twenty.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/abax"><img src="~/Images/Partners-page/twentyone.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/elv"><img src="~/Images/Partners-page/twentytwo.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/inter-gestion-reim"><img src="~/Images/Partners-page/twentythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/goodeed"><img src="~/Images/Partners-page/twentyfour.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/vp-capital"><img src="~/Images/Partners-page/twentyfive.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/norstat"><img src="~/Images/Partners-page/twentysix.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/tentsile"><img src="~/Images/Partners-page/twentyseven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/sandbox"><img src="~/Images/Partners-page/twentyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/grapedistrict"><img src="~/Images/Partners-page/twentynine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ap-sensing"><img src="~/Images/Partners-page/thirty.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/bnp-paribas-fortis-foundation"><img src="~/Images/Partners-page/thiryone.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/gojava"><img src="~/Images/Partners-page/thirtytwo.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/msd-animal-health"><img src="~/Images/Partners-page/thirtythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/bryan-adams-and-dhl"><img src="~/Images/Partners-page/thirtyfour.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/eneco"><img src="~/Images/Partners-page/thirtyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/greenadz"><img src="~/Images/Partners-page/thirtysix.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/kadonation"><img src="~/Images/Partners-page/thirtyseven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/experience-scotland"><img src="~/Images/Partners-page/thirtyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/giel-boes-foundation"><img src="" alt="giel boes foundation" /></a>
+                <a class="p" href="https://www.weforest.org/partner/goodbag"><img src="~/Images/Partners-page/thirtynine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/lords-mobile"><img src="~/Images/Partners-page/forty.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/dukes-coffee-roasters"><img src="~/Images/Partners-page/fourtyone.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/renewd"><img src="~/Images/Partners-page/fourtytwo.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/stolt-tankers"><img src="~/Images/Partners-page/fourtythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/la-boucle"><img src="~/Images/Partners-page/fourtyfour.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/creo2"><img src="" alt="Creo2" /></a>
+                <a class="p" href="https://www.weforest.org/partner/marriott-hotels"><img src="~/Images/Partners-page/fourtyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/alpro"><img src="~/Images/Partners-page/fourtysix.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/one-retail-group"><img src="~/Images/Partners-page/fourtyseven.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/axa"><img src="~/Images/Partners-page/fourtyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/plaisirs"><img src="~/Images/Partners-page/fourtynine.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/pno"><img src="~/Images/Partners-page/fifty.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/rockwell-automation-bv"><img src="~/Images/Partners-page/fiftyone.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/gr%C3%BCn-versichert"><img src="~/Images/Partners-page/fiftytwo.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/chocolate-and-love"><img src="~/Images/Partners-page/fiftythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/smart-klimat-ab"></a><img src="" alt="smart klimart" /></a>
+                <a class="p" href="https://www.weforest.org/partner/esprit-eyewear"></a><img src="~/Images/Partners-page/fiftyfour.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/agood-company-ltd"><img src="~/Images/Partners-page/fiftyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/flora-curl"><img src="~/Images/Partners-page/fiftysix.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/student-hotel"><img src="~/Images/Partners-page/fiftyseven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/cleanfox"><img src="~/Images/Partners-page/fiftyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/pangaea-life"><img src="~/Images/Partners-page/fiftynine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ryser-boden"><img src="~/Images/Partners-page/sixty.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/oxygen-work"><img src="~/Images/Partners-page/sixtyone.jpg" alt="oxygen at work" /></a>
+                <a class="p" href="https://www.weforest.org/partner/eco-laundry-company"><img src="~/Images/Partners-page/sixtytwo.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/natural-balance-foods"><img src="~/Images/Partners-page/sixtythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/boma"><img src="~/Images/Partners-page/sixtyfour.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/save-water-save-money-ltd"><img src="~/Images/Partners-page/sixtyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/mission"><img src="~/Images/Partners-page/sixtysix.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/lumeri"><img src="~/Images/Partners-page/sixtyseven.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/artfood-traiteur"><img src="~/Images/Partners-page/sixtyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/wildworks"><img src="~/Images/Partners-page/sixtynine.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/markitects"><img src="~/Images/Partners-page/seventy.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/choose-challenge"><img src="~/Images/Partners-page/seventyone.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/dmu-hospitality-furniture"><img src="~/Images/Partners-page/seventytwo.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/flora-curl"><img src="" alt="ramco" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ramko"><img src="~/Images/Partners-page/seventythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/tanaman"><img src="" alt="tanaman" /></a>
+                <a class="p" href="https://www.weforest.org/partner/regreener"><img src="~/Images/Partners-page/seventyfour.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/allplants"><img src="~/Images/Partners-page/seventyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/harvest-management-bv"><img src="~/Images/Partners-page/seventysix.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/tickethic"><img src="~/Images/Partners-page/seventyseven.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/liberty"><img src="" alt="liberty floor solutions" /></a>
+                <a class="p" href="https://www.weforest.org/partner/lartisane-culinaire"><img src="~/Images/Partners-page/seventyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/de-spiegelfabriek"><img src="" alt="de spiegel" /></a>
+                <a class="p" href="https://www.weforest.org/partner/orange-clignotant"><img src="~/Images/Partners-page/seventynine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/esprit-eyewear"><img src="~/Images/Partners-page/eighty.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/moaconcept"><img src="~/Images/Partners-page/eightyone.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ziro"><img src="~/Images/Partners-page/eightytwo.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/furn"><img src="~/Images/Partners-page/eightythree.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/new-york-times"><img src="~/Images/Partners-page/eightyfour.png" /></a>
+                <a class="p"href="https://www.weforest.org/partner/serco"><img src="~/Images/Partners-page/eightyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/winter-company"><img src="~/Images/Partners-page/eightysix.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/seesense"><img src="~/Images/Partners-page/eightyseven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/kerstin-florian"><img src="~/Images/Partners-page/eightyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/linklaters-llp"><img src="~/Images/Partners-page/eightynine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/yep-you"><img src="~/Images/Partners-page/ninety.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/cortina"><img src="~/Images/Partners-page/ninetyone.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/chargeurs-pcc"><img src="~/Images/Partners-page/ninetytwo.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/capital-d"><img src="" alt="capitalD" /></a>
+                <a class="p" href="https://www.weforest.org/partner/selva-sauvage"><img src="~/Images/Partners-page/ninetyone.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/euroheat-power"><img src="~/Images/Partners-page/ninetythree.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/coco-malou"><img src="~/Images/Partners-page/ninetyfour.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/raasveld-bennis"><img src="" alt="raasveld bennis" /></a>
+                <a class="p" href="https://www.weforest.org/partner/azimut"><img src="~/Images/Partners-page/ninetyfive.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/evolutio-vof"><img src="" alt="evolutio" /></a>
+                <a class="p" href="https://www.weforest.org/partner/fcilondon"><img src="~/Images/Partners-page/ninetysix.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/roootz"><img src="~/Images/Partners-page/ninetyseven.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/bona"><img src="~/Images/Partners-page/ninetyeight.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/piesync"><img src="~/Images/Partners-page/ninetynine.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/treescape"><img src="" alt="treescape" /></a>
+                <a class="p" href="https://www.weforest.org/partner/pianos-maene"><img src="~/Images/Partners-page/hundred.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/cullen-international"><img src="~/Images/Partners-page/101.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/beursgenoten"><img src="~/Images/Partners-page/102.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/foxintelligence"><img src="~/Images/Partners-page/103.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/wali"><img src="" alt="WALI" /></a>
+                <a class="p" href="https://www.weforest.org/partner/twothirds"><img src="~/Images/Partners-page/104.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/careerplug"><img src="~/Images/Partners-page/105.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/out-out"><img src="~/Images/Partners-page/106.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/noel-asmar-group"><img src="~/Images/Partners-page/107.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/pikolinos"><img src="~/Images/Partners-page/108.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/clariant"><img src="~/Images/Partners-page/109.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/b-tray"><img src="" alt="BRAY" /></a>
+                <a class="p" href="https://www.weforest.org/partner/sneaker-lab"></a><img src="~/Images/Partners-page/110.png" />
+                <a class="p" href="https://www.weforest.org/partner/euler-hermes-group"><img src="~/Images/Partners-page/111.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/impedans"><img src="~/Images/Partners-page/112.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/bluebits"><img src="" alt="bluebits bv" /></a>
+                <a class="p" href="https://www.weforest.org/partner/keen"><img src="~/Images/Partners-page/113.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/diadora"><img src="~/Images/Partners-page/114.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/riviera-marriott-hotel-la-porte-de-monaco"><img src="~/Images/Partners-page/115.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/gartnerei-michael-camphausen"><img src="~/Images/Partners-page/116.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/coachingent"><img src="~/Images/Partners-page/117.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ginette"><img src="~/Images/Partners-page/118.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/reset"><img src="~/Images/Partners-page/119.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/mima"><img src="" alt="mima" /></a>
+                <a class="p" href="https://www.weforest.org/partner/senator"><img src="" alt="senator" /></a>
+                <a class="p" href="https://www.weforest.org/partner/perkinelmer"><img src="~/Images/Partners-page/121.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/magnis-group"><img src="~/Images/Partners-page/122.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/statik"><img src="~/Images/Partners-page/123.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/gaia-insights"><img src="~/Images/Partners-page/124.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/earth-heir"><img src="~/Images/Partners-page/125.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/globe-locums"><img src="~/Images/Partners-page/126.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/stampix"><img src="~/Images/Partners-page/127.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/gt-exhibitions-ltd"><img src="~/Images/Partners-page/128.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/skycell"><img src="~/Images/Partners-page/129.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/brodynt"><img src="~/Images/Partners-page/130.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/active-giving"><img src="~/Images/Partners-page/131.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/santafixie"><img src="~/Images/Partners-page/132.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/just-t"><img src="~/Images/Partners-page/133.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/joris-van-der-bijl"><img src="~/Images/Partners-page/134.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/cowboy"><img src="" alt="cowboy" /></a>
+                <a class="p" href="https://www.weforest.org/partner/enpal"><img src="~/Images/Partners-page/135.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/kissplanet"><img src="~/Images/Partners-page/136.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/soci%C3%A9t%C3%A9-des-biscuits-olibet"><img src="~/Images/Partners-page/137.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/1931"><img src="~/Images/Partners-page/138.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/lolo-carolo"><img src="~/Images/Partners-page/139.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/pixelpod"><img src="" alt="pixelpods" /></a>
+                <a class="p" href="https://www.weforest.org/partner/didid"><img src="" alt="didid" /></a>
+                <a class="p" href="https://www.weforest.org/partner/seco-tools"><img src="~/Images/Partners-page/149.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/treez"><img src="" alt="treez" /></a>
+                <a class="p" href="https://www.weforest.org/partner/tendam"><img src="~/Images/Partners-page/140.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/el-gusto-loc"><img src="~/Images/Partners-page/141.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/running-republic"><img src="~/Images/Partners-page/142.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/mills-fabrica"><img src="~/Images/Partners-page/143.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/myfashionfruit"><img src="~/Images/Partners-page/144.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/cyber-risk-international"><img src="~/Images/Partners-page/145.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/treeside"><img src="" alt="treeside" /></a>
+                <a class="p" href="https://www.weforest.org/partner/oceans-apart"><img src="~/Images/Partners-page/146.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/bourgad"><img src="~/Images/Partners-page/147.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/badger-productions"><img src="~/Images/Partners-page/148.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/verit%C3%A9-spa-organics"><img src="" alt="verite" /></a>
+                <a class="p" href="https://www.weforest.org/partner/bss"><img src="" alt="business solutions for services" /></a>
+                <a class="p" href="https://www.weforest.org/partner/fertile-frog"><img src="" alt="fertilefrog" /></a>
+                <a class="p" href="https://www.weforest.org/partner/kingdom"><img src="" alt="kingdom" /></a>
+                <a class="p" href="https://www.weforest.org/partner/runda-jewelry"><img src="" alt="runda" /></a>
+                <a class="p" href="https://www.weforest.org/partner/pumpqin"><img src="~/Images/Partners-page/149-.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/%C3%B4-mat%C3%A9"><img src="~/Images/Partners-page/150.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/sadu"><img src="~/Images/Partners-page/151.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/talent-unlimited"><img src="~/Images/Partners-page/152.jpg" /></a>
+                <a class="p" href="https://www.weforest.org/partner/froged"><img src="~/Images/Partners-page/153.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/noble-health-food"><img src="~/Images/Partners-page/154.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/you-generate"><img src="" alt="you generate" /></a>
+                <a class="p" href="https://www.weforest.org/partner/ecosia"><img src="~/Images/Partners-page/155.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/kwadraat"><img src="~/Images/Partners-page/156.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/smart-daimler-benz"><img src="~/Images/Partners-page/157.png" /></a>
+                <a class="p" href="https://www.weforest.org/partner/europcar"><img src="~/Images/Partners-page/158.jpg" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/159.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/160.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/161.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/162.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/163.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/164.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/165.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/166.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/167.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/168.jpg" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/169.jpg" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/170.png" /></a>
+                <a class="p" href="#"><img src="" alt="gsn" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/171.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/172.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/173.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/174.jpg" /></a>
+                <a class="p" href="#"><img src="" alt="lyssna" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/175.png" /></a>
+                <a class="p" href="#"><img src="~/Images/Partners-page/176.png" /></a>
+                <a class="f" href="https://www.comon.earth/"><img src="" alt="COmON" /></a>
+                <a class="f" href="https://treesisters.org/"><img src="~/Images/Partners-page/177.png" /></a>
+                <a class="f" href="https://www.dioraphte.nl/en"><img src="~/Images/Partners-page/178.png" /></a>
+                <a class="f" href="https://www.bosplus.be/en/"><img src="~/Images/Partners-page/179.png" /></a>
+                <a class="f" href="https://www.ffd.fi/"><img src="~/Images/Partners-page/180.png" /></a>
+                <a class="f" href="https://um.fi/frontpage"><img src="~/Images/Partners-page/181.png" /></a>
+                <a class="f" href="https://www.musika.org.zm/"><img src="~/Images/Partners-page/182.png" /></a>
+                <a class="f" href="http://www.fao.org/home/en/"><img src="~/Images/Partners-page/183.jpg" /></a>
+                <a class="f" href="http://www.plant-for-the-planet.org/en/home"><img src="~/Images/Partners-page/184.png" /></a>
+                <a class="f" href="https://www.vlaamsbrabant.be/nl"><img src="~/Images/Partners-page/185.png" /></a>
+                <a class="f" href="https://swbg-conservationfund.org/"><img src="~/Images/Partners-page/186.jpg" /></a>
+                <a class="f" href="https://www.giz.de/de/html/index.html"><img src="~/Images/Partners-page/187.png" /></a>
+            </div>
+        </div>
+        <div class="foundations-part">
+            <div class="header">
+            </div>
+            <div class="bottom-grid">
+            </div>
+        </div>
+    </div>
+    
+</body>
+

@@ -1,0 +1,152 @@
+﻿* {
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #292C45;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 110px;
+    border-bottom: 1px solid #ffffff15;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 65px;
+    color: #fff;
+}
+
+.banner-text {
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+.banner ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.banner ul li {
+    list-style: none;
+    margin: 20px 20px 0;
+    position: relative;
+    font-weight: 300;
+}
+
+.banner ul li:not(:first-child):before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    left: -25px;
+    background-color: #434d90;
+    border-radius: 50px;
+}
+
+.earth {
+    position: relative;
+}
+
+.earth-img img {
+    position: relative;
+    top: 125px;
+}
+
+.circle {
+    width: 756px;
+    height: 756px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    position: relative;
+    top: -500px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: circle 60s linear 0s infinite;
+}
+
+@keyframes circle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.icon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 24px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #292c45;
+    transition: all ease 0.5s;
+}
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+        filter: opacity(0.6) drop-shadow(0 0 0 white);
+    }
+
+    .icon:hover {
+        border-color: #3951e8;
+        background-color: #3951e8;
+        box-shadow: 0 4px 94px #384fde;
+    }
+
+    .icon:nth-child(1) {
+        top: -40px;
+        left: 41%;
+    }
+
+    .icon:nth-child(2) {
+        top: 70px;
+        right: 50px;
+    }
+
+    .icon:nth-child(3) {
+        top: 330px;
+        right: -50px;
+    }
+
+    .icon:nth-child(4) {
+        bottom: 60px;
+        right: 60px;
+    }
+
+    .icon:nth-child(5) {
+        bottom: -40px;
+        right: 41%;
+    }
+
+    .icon:nth-child(6) {
+        top: 70px;
+        left: 45px;
+    }
+
+    .icon:nth-child(7) {
+        top: 575px;
+        left: 45px;
+    }
+
+    .icon:nth-child(8) {
+        top: 328px;
+        left: -55px;
+    }

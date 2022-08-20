@@ -1,0 +1,86 @@
+﻿@model  List<HW04_u19206985.Models.IndustryAnalyst>
+@{
+    ViewBag.Title = "Index";
+}
+
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .section {
+            margin-top: 50px;
+            width: 800px;
+            height: 700px;
+            background-color: #f2f2f2;
+        }
+
+        .area {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .click {
+            text-decoration: none;
+        }
+
+        .back {
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="area">
+            @foreach (var vac in Model)
+            {
+                <h3>@vac.GetPosition()</h3>
+                <br />
+                <p><span>Location:</span>@vac.Geo()</p>
+                <p><span>Timeframe:</span>@vac.TimeFrame</p>
+                <p><span>Position summary:</span>@vac.Summary</p>
+            }
+            <p><span>Areas of responsibility</span></p>
+            <ul>
+                <li>­Research, collect, clean, analyze and report on diverse topics related to WeForest’s ecosystem</li>
+                <li>Draft presentations and papers on specific topics related to our industry</li>
+                <li>­Research and analysis in the design, development, and implementation of an Accelerator programme</li>
+                <li>Support the organizational strategy with the implementation of new processes and tools.</li>
+            </ul>
+            @foreach (var vac in Model)
+            {
+                <p><span>Reporting:</span>@vac.Reporting</p>
+            }
+            <p><span>Skills/experience</span></p>
+            <ul>
+                <li>Currently pursuing a Master in Sustainability, of Law, in Business Administration or in Business  Communication</li>
+                <li>­Highly inspired by our goal to make Earth a better, cooler place</li>
+                <li>­Ability to work in team as well as independently</li>
+                <li>­Agile, flexible, enthusiast, proactive, self-motivated, "can do" attitude</li>
+                <li>­Willing to work remotely and independently</li>
+                <li>­Great verbal and written communications skills</li>
+                <li>­Keen attention to details and adherence to deadlines</li>
+                <li>­Knowledge of Microsoft office applications such as excel</li>
+                <li>­Proficient in English but can be a French or Dutch native speaker</li>
+            </ul>
+            @foreach (var vac in Model)
+            {
+                <p><span>Period and duration:</span>@vac.Duration</p>
+            }
+            <p><span>How to apply</span></p>
+            <a href="mailto:recruitment@weforest.org" class="click">Apply Here</a>
+        </div>
+    </div>
+    <br />
+    <div class="back-button">
+        <a href="/Jobs/Index"><input type="button" value="Back<<" class="back" /></a>
+    </div>
+</body>
+

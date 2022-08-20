@@ -1,0 +1,106 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <link href="@Url.Content("~/Content/landing-css.css")" rel="stylesheet" type="text/css" />
+    <style>
+        .use-cases h1{
+            color: white;
+            text-align: center;
+        }
+        .use-cases .case{
+            margin-left: 100px;
+        }
+        .case img{
+            width: 1000px;
+            height: 1000px;
+        }
+        .case h1{
+            color: white;
+            text-align: center;
+        }
+        .class-diagram h1{
+            color: white;
+            text-align: center;
+        }
+        .class-diagram img{
+            width: 1000px;
+            height: 1000px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <a href="#"><img src="" alt=""/></a>
+            </div>
+        </header>
+        <div class="banner">
+            <br />
+            <br />
+            <div class="earth">
+                <div class="earth-img">
+                    <img src="~/Images/Landing-page/the-earth.png" alt="earth"/>
+                </div>
+                <div class="circle">
+                    <div class="icon"><a href="/Projects/Index"><img src="~/Images/Landing-page/earth.png" /></a></div>
+                    <div class="icon"><a href="/Involvement/Index"><img src="~/Images/Landing-page/leaf.png" /></a></div>
+                    <div class="icon"><a href="/Donations/Index"><img src="~/Images/Landing-page/heart.png" /></a></div>
+                    <div class="icon"><a href="/Partners/Index"><img src="~/Images/Landing-page/handshake.png" /></a></div>
+                    <div class="icon"><a href="https://www.weforest.org/page/newsroom"><img src="~/Images/Landing-page/magnifying-glass.png" /></a></div>
+                    <div class="icon"><a href="/Jobs/Index"><img src="~/Images/Landing-page/job-post.png" /></a></div>
+                    <div class="icon"><a href="https://www.weforest.org/page/faqs#faq-block_1-2"><img src="~/Images/Landing-page/faq.png" /></a></div>
+                    <div class="icon"><a href="/News/Index"><p><strong>...</strong></p></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="use-cases">
+            <br />
+            <div class="case">
+                <h1> Use Cases</h1>
+                <br />
+                <h1>Use Case 1</h1>
+                <br />
+                <br />
+                <img src="~/Images/Landing-page/us1.jpg" />
+                <br />
+                <br />
+            </div>
+            <div class="case">
+                <h1>Use Case 2</h1>
+                <br />
+                <br />
+                <img src="~/Images/Landing-page/us2.jpg"/>
+                <br />
+                <br />
+            </div>
+            <div class="case">
+                <h1>Use Case 3</h1>
+                <br />
+                <br />
+                <img src="~/Images/Landing-page/us3.jpg"/>
+                <br />
+                <br />
+            </div>
+            <div class="case">
+                <h1>Use Case 4</h1>
+                <br />
+                <br />
+                <img src="~/Images/Landing-page/us4.jpg"/>
+                <br />
+                <br />
+            </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="class-diagram">
+            <h1>Job Class Structure Diagram</h1>
+            <img src="~/Images/Landing-page/JobsClassDiagram.png"/>
+        </div>
+    </main>
+</body>
+

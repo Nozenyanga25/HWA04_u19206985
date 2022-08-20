@@ -1,0 +1,297 @@
+﻿body {
+    background-color: white;
+    margin: 0;
+}
+
+.row {
+    display: inline-block;
+    margin-top: 550px;
+}
+
+.col-md-3 img {
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.6) drop-shadow(0 0 0 white);
+}
+
+#first-icon:hover img{
+    display: none;
+}
+
+#first-icon:hover:before {
+    content: "Not tax-deductible";
+    padding-left: 50px;
+}
+#second-icon:hover img {
+    display: none;
+}
+
+#second-icon:hover:before {
+    content: "Not tax-deductible";
+    padding-left: 50px;
+}
+
+#third-icon:hover img {
+    display: none;
+}
+
+#third-icon:hover:before {
+    content: "Donating cryptocurrency is a non-taxable event​";
+    padding-left: 50px;
+}
+
+#fourth-icon:hover img {
+    display: none;
+}
+
+#fourth-icon:hover:before {
+    content: "Tax-deductible for US residents";
+    padding-left: 50px;
+}
+
+#fifth-icon:hover img {
+    display: none;
+}
+
+#fifth-icon:hover:before {
+    content: "Tax-deductible for European residents";
+    text-align: center;
+    padding-left: 50px;
+}
+
+.col-md-3 {
+    height: 200px;
+    width: 200px;
+    border: 2px solid darkolivegreen;
+    margin-right: 30px;
+    /**/
+    border-color: #3f6334;
+    background-color: white;
+    padding: 45px;
+}
+
+.col-md-3:hover {
+    cursor: pointer;
+    border-color: darkolivegreen;
+    background-color: darkolivegreen;
+    box-shadow: 0 4px 94px darkolivegreen;
+    /**/
+    color: white;
+}
+
+.image {
+    width: 100%;
+    height: 500px;
+    background-color: #292C45;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.image h1 {
+    text-align: center;
+    color: white;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.image p {
+    color: white;
+    text-align: center;
+}
+
+.first{
+    height: 500px;
+    margin-top: 100px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second {
+    height: 500px;
+    margin-top: 20px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.third {
+    height: 500px;
+    margin-top: 20px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fourth {
+    height: 2500px;
+    margin-top: -1000px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fifth {
+    height: 500px;
+    margin-top: 20px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.method-1 img {
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.6) drop-shadow(0 0 0 white);
+}
+
+.method-1 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    margin-right: 50px;
+    /**/
+    border-color: #3f6334;
+    background-color: darkolivegreen;
+    padding: 45px;
+}
+
+.method-2 img {
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.6) drop-shadow(0 0 0 white);
+}
+
+.method-2 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    /**/
+    border-color: #3f6334;
+    background-color: darkolivegreen;
+    padding: 45px;
+}
+
+.method-3 img {
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.6) drop-shadow(0 0 0 white);
+}
+
+.method-3 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    margin-right: 50px;
+    /**/
+    border-color: #3f6334;
+    background-color: darkolivegreen;
+    padding: 45px;
+}
+
+.method-4 img {
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.6) drop-shadow(0 0 0 white);
+}
+
+.method-4 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    /**/
+    border-color: #3f6334;
+    background-color: darkolivegreen;
+    padding: 45px;
+}
+
+.method-5 img {
+    width: 100px;
+    height: 100px;
+    filter: opacity(0.6) drop-shadow(0 0 0 white);
+}
+
+.method-5 {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    margin-right: 50px;
+    /**/
+    border-color: #3f6334;
+    background-color: darkolivegreen;
+    padding: 45px;
+}
+
+.desc1{
+    height: 200px;
+    width: 900px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.desc2 {
+    height: 200px;
+    width: 900px;
+    margin-top: -25px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.desc3 {
+    height: 200px;
+    width: 900px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.desc4 {
+    height: 200px;
+    width: 900px;
+    margin-top: -25px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.desc5 {
+    height: 200px;
+    width: 900px;
+    margin-top: -25px;
+    text-align: center;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.bottom-container{
+    margin-top: 50px;
+}
+
+.flex{
+    margin-top: 150px;
+}
+
+.flex .flex-items{
+    display: flex;
+}
+
+.flex-items .col{
+    margin-right: 50px;
+}
+
+.flex .col-out{
+    margin-top: 50px;
+    float: left;
+}

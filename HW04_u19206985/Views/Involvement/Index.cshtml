@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "Get Involved";
+}
+
+<head>
+    <link href="@Url.Content("~/Content/involvement-css.css")" rel="stylesheet" type="text/css" />
+    <style>
+        form{
+            float: left;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="header">
+        <br />
+        <br />
+        <h1>G&nbsp;e&nbsp;t&nbsp; I&nbsp;n&nbsp;v&nbsp;o&nbsp;l&nbsp;v&nbsp;e&nbsp;d</h1>
+        <br />
+        <p><i>When you do nothing you feel overwhelmed and powerless. But when you get involved you feel the sense of hope and <br />accomplishment that comes from knowing you are working to make things better." - Maya Angelou</i></p>
+    </div>
+    <div class="section">
+        <div class="first">
+            <h1>What Your Company Can Do</h1>
+            <br />
+            <br />
+            <a href="/Involvement/Index"><img src="~/Images/Involvement-page/one.png" /></a>
+            <div class="first-div">
+                <p><strong>Grow and protect trees to protect trees to engage customers</strong></p>
+                <p>Impact marketing with trees increases brand affinity with the growing number of consumers who prefer brands that contribute to the well-being of the planet, compared to those that do not. <a href="https://www.weforest.org/page/get-involved#growtrees">Read more...</a></p>
+            </div>
+            <br />
+            <br />
+            <a href="/Involvement/Index"><img src="~/Images/Involvement-page/two.png" /></a>
+            <div class="second-div">
+                <p><strong>Sponsor a forest for Corporate Social Responsibility (CSR)</strong></p>
+                <p>Sponsoring one of our projects means employee ​and customer engagement - everyone loves trees! You'll be able to regularly share communications material about your project. <a href="https://www.weforest.org/page/get-involved#SponsorForests">Read more...</a></p>
+            </div>
+            <br />
+            <br />
+            <a href="/Involvement/Index"><img src="~/Images/Involvement-page/three.png" /></a>
+            <div class="third-div">
+                <p><strong>Compensate your carbon footprint</strong></p>
+                <p>When carbon sequestration is needed, the best technology is a tree. They are an amazing carbon sink. <a href="https://www.weforest.org/page/get-involved#carboncompensation">Read more...</a></p>
+            </div>
+            <br />
+            <br />
+            <a href="/Involvement/Index"><img src="~/Images/Involvement-page/four.png" /></a>
+            <div class="fourth-div">
+                <p><strong>Make a philanthropic donation</strong></p>
+                <p>WeForest is a non-profit organisation. In the <a href="https://www.weforest.org/page/donate#globalgiving">United States</a> and most <a href="https://www.weforest.org/page/donate#tge">European countries</a>, donations to WeForest are tax deductible. <a href="/Donations/Index">Read more...</a></p>
+            </div>
+            <br />
+            <br />
+            <a href="/Involvement/Index"><img src="~/Images/Involvement-page/five.png" /></a>
+            <div class="fifth-div">
+                <p><strong>Fund scientific research</strong></p>
+                <p>Our projects are grounded in science. We collaborate with scientific advisors, international organisations such as the FAO, and universities to develop applied research in our restoration projects. <a href="https://www.weforest.org/page/why-and-how#research">Read more...</a></p>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+
+                @using (Html.BeginForm("Index", "Involvement", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    <form>
+                        <h3>Upload Company Proposal</h3>
+                        <br>
+                        <input type="file" name="UploadedFile" /><br />
+                        <input type="submit" value="Submit" />
+
+                    </form>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</body>
+

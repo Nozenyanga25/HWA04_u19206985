@@ -1,0 +1,83 @@
+﻿@model  List<HW04_u19206985.Models.DataScientist>
+@{
+    ViewBag.Title = "Data Scientist Position";
+}
+
+<head>
+    <style>
+        body{
+            background-color: white;
+        }
+        .section{
+            margin-top: 50px;
+            width: 800px;
+            height: 1000px;
+            background-color: #f2f2f2;
+        }
+        .area{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        span{
+            font-weight: bold;
+        }
+        .click{
+            text-decoration: none;
+        }
+        .back{
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="area">
+            @foreach (var vac in Model)
+            {
+                <h3>@vac.GetPosition()</h3>
+                <br />
+                <p><span>Location:</span>@vac.Geo()</p>
+                <p><span>Timeframe:</span>@vac.TimeFrame</p>
+            }
+            <p>The Geospatial Data Scientist role will primarily focus on providing the technical skills and expertise necessary to support the growth and development of WeForest’s project portfolio. Specifically, the position is required to provide high quality geospatial analyses to support project feasibility studies, project certification and monitoring & evaluation (M&E) of all projects.</p>
+            <p>Under the leadership of our Director of Climate Science & Policy, this position interacts closely with the country project teams at WeForest</p>
+            <p>MAIN RESPONSIBIITIES</p>
+            <ul>
+                <li>Undertaking GIS and remote sensing tasks in support of project feasibility studies, certification development (e.g. carbon certification) and project implementation</li>
+                <li>Analysis of quantitative and/or qualitative datasets to support project and HQ level M&E and reporting</li>
+                <li>Ensure the cleanliness and accuracy of WeForest Geodata to support mapping processes</li>
+                <li>Coordinate with M&E Manager to review and organise existing data holdings</li>
+                <li>Coach and develop capacities of the projects’ teams on monitoring, evaluation and reporting</li>
+                <li>Aggregate data from the different project teams on a regular basis</li>
+                <li>Assist them in their methodology to collect and analyze data</li>
+                <li>Coordinate with M&E Manager to develop and provide training in GIS, remote sensing and other data analysis methods to build in-house and partner capacity</li>
+                <li>Ensure the teams follow data storage guidelines</li>
+                <li>Check and contribute to improve data quality with project teams</li>
+            </ul>
+            <p>REQUIRED SKILLS & QUALIFICATIONS</p>
+            <ul>
+                <li>Graduated professional (Masters minimum) in a relevant field e.g. environmental sciences, geography, earth observation and geographical information science</li>
+                <li>Good technical skills and knowledge of tools for data collection and data analysis (e.g. Kobo Collect,</li>
+                <li>Google Earth Engine, JavaScript, QGIS, R)</li>
+                <li>Strong GIS and remote sensing skills demonstrated in the field of land use change dynamics e.g. land cover classification, cover change.</li>
+                <li>Demonstrated experience of analyzing complex datasets from the biophysical sciences e.g. forest inventory datasets</li>
+                <li>Advanced knowledge of using GIS software, preferably QGIS (Essential)</li>
+                <li>Advanced knowledge of using Microsoft Excel (Essential)</li>
+                <li>Experience of using advanced statistical software for data analysis e.g. R</li>
+                <li>Knowledge in Carbon accounting methodologies expertise is a plus</li>
+                <li>Strong interpersonal and communication skills, clearly a team player</li>
+                <li>Fluent spoken and written English. Other languages (French, Spanish, Portuguese or some Asian languages) are a big plus</li>
+                <li>Flexibility to travel regularly</li>
+            </ul>
+            <p>HOW TO APPLY</p>
+            <a href="mailto:recruitment@weforest.org" class="click">Apply Here</a>
+        </div>
+    </div>
+    <br />
+    <div class="back-button">
+        <a href="/Jobs/Index"><input type="button" value="Back<<" class="back"/></a>
+    </div>
+</body>
+

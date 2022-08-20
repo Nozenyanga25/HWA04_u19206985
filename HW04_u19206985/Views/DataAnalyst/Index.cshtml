@@ -1,0 +1,90 @@
+﻿@model  List<HW04_u19206985.Models.DataAnalyst>
+@{
+    ViewBag.Title = "Data Analyst Position";
+}
+
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .section {
+            margin-top: 50px;
+            width: 800px;
+            height: 800px;
+            background-color: #f2f2f2;
+        }
+
+        .area {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .click {
+            text-decoration: none;
+        }
+
+        .back {
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="area">
+            @foreach (var vac in Model)
+            {
+                <h3>@vac.GetPosition()</h3>
+                <br />
+                <p><span>Location:</span>@vac.Geo()</p>
+                <p><span>Timeframe:</span>@vac.TimeFrame</p>
+                <p><span>Position summary:</span>@vac.Summary</p>
+            }
+            <p>Area of responsibiity</p>
+            <ul>
+                <li>Data mining: map out what data is currently accessible to HQ (dropbox, google drive,…) - Data mapping: map out what data should additionally be available (derived from reports, log frames,  M&E plans, etc.) </li>
+                <li>Data priority: map what data are most frequently needed, what data has easy access, what data has  been hard to obtain, etc. </li>
+                <li>
+                    Reporting: synthesize the obtained knowledge to design & propose
+                    <ul style="list-style: circle;">
+                        <li>a data management structure  </li>
+                        <li>protocol/templates for metadata construction </li>
+                    </ul>
+                </li>
+            </ul>
+            @foreach (var vac in Model)
+            {
+                <p><span>Reporting:</span>@vac.Reporting</p>
+            }
+            <p><span>Skills/experience</span></p>
+            <ul>
+                <li>­Currently pursuing a Master in biology, bioengineering, sustainable development or related fields ­ Ability to work in team as well as independently</li>
+                <li>­ Agile, flexible, enthusiast, proactive, self-motivated, "can do" attitude</li>
+                <li>­ Willing to work remotely and independently</li>
+                <li>­ Great verbal and written communications skills</li>
+                <li>­ Keen attention to details and adherence to deadlines</li>
+                <li>­ Knowledge of Microsoft office applications such as excel</li>
+                <li>­ Proficient in English but does not have to be an English native speaker</li>
+                <li>­ Inspired by our goal to make Earth a better, cooler place</li>
+            </ul>
+            @foreach (var vac in Model)
+            {
+                <p><span>Period and duration: </span>@vac.Duration</p>
+            }
+            <p><span>How to apply</span></p>
+            <a href="mailto:recruitment@weforest.org" class="click">Apply Here</a>
+        </div>
+    </div>
+    <br />
+    <div class="back-button">
+        <a href="/Jobs/Index"><input type="button" value="Back<<" class="back" /></a>
+    </div>
+</body>
+

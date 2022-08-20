@@ -1,0 +1,52 @@
+﻿@model IEnumerable<HW04_u19206985.Models.FileModel>
+@{
+    ViewBag.Title = "Sponsors";
+}
+
+<head>
+    <style>
+        body{
+            background-color: white;
+        }
+    </style>
+</head>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-8 ">
+        <h1>Uploaded Business Proposals</h1>
+        <br />
+        <br />
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FileName)
+
+                </th>
+                <th>
+                    <p>Download Option</p>
+                </th>
+                <th>
+                    <p>Delete Option</p>
+                </th>
+            </tr>
+
+            @foreach (var file in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => file.FileName)
+                    </td>
+                    <td>
+                        <button class="download">@Html.ActionLink("Download", "DownloadFile", new { fileName = file.FileName })</button>
+                    </td>
+                    <td>
+                        <button class="delete">@Html.ActionLink("Delete", "DeleteFile", new { fileName = file.FileName })</button>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+

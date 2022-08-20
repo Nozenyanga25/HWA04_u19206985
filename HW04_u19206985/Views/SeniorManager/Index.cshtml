@@ -1,0 +1,114 @@
+﻿@model  List<HW04_u19206985.Models.SeniorManager>
+@{
+    ViewBag.Title = "Senior Manager Position";
+}
+
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        .section {
+            margin-top: 50px;
+            width: 800px;
+            height: 2050px;
+            background-color: #f2f2f2;
+        }
+
+        .area {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .click {
+            text-decoration: none;
+        }
+
+        .back {
+            width: 60px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="area">
+            @foreach (var vac in Model)
+            {
+                <h3>@vac.GetPosition()</h3>
+                <br />
+                <p><span>Permanent contract, </span>@vac.Contract</p>
+                <p><span>Location:</span>@vac.Geo()</p>
+                <p><span>Attractive package </span>@vac.Package</p>
+                <p><span>Starting date: </span>@vac.StartingDate</p>
+            }
+            <p><span>Help us write our next chapter</span></p>
+            <p>Are you looking for the chance to lead inspiring content creation that drives positive action on global warming and biodiversity loss?  As well as being a great copywriter, can you also build great content strategies and efficiently manage the production of online and offline content?</p>
+            <p>WeForest is a fast-growing non-profit organization protecting and restoring forests and funded by brands (like Nike), foundations and philanthropists. You will be our chief storyteller: inspiring action, building trust and credibility for the WeForest brand.  This is a fantastic opportunity to further develop your knowledge and expertise in this sector and use your creative skills and experience to address some of the greatest challenges of our time.</p>
+            <p><span>Our Offer</span></p>
+            <ul>
+                <li>Join a dynamic and fun team working in an organization that respects and values its employees</li>
+                <li>Enjoy the privilege of learning all the details of our action on the ground and turning it into inspiring content to move your audience and invite them to join us</li>
+                <li>Make a real difference to people’s lives by helping, through amazing content, to attract new supporters to our cause</li>
+                <li>Work in one of the fastest-growing climate action organizations</li>
+                <li>Benefit from training and development opportunities</li>
+                <li>We offer an informal office environment, remote opportunities, and respect for autonomy</li>
+            </ul>
+            <p><span>Responsibilities</span></p>
+            <p>Working within a team that supports and nurtures our current funders, you will position WeForest externally to connect with our core audience of potential new partners and funders. Working closely with the CEO as well as the wider team you will develop and implement marketing content and strategies and tell our story with passion and credibility. As chief storyteller you are a fantastic copywriter and act as editor in chief for all our content to ensure that all our content, branding and messaging is on point and done with excellence.</p>
+            <p>You will build systems, structures, and strategies that build the top end of the fundraising funnel.  This will include:</p>
+            <ul>
+                <li><span>Content </span>marketing strategy development for your target audience of potential new partners and funders.</li>
+                <li>Implement and manage an <span>email marketing system</span> in close collaboration with the fundraising team and current CRM software (Salesforce).</li>
+                <li><span>Content production and management:</span> You can create content yourself, though more often you will facilitate and manage the production of content (e.g. annual report, video scripts and finished videos, presentations, special campaigns, etc) with assistance from the team and freelance support. You will identify and manage the process to deliver on time and budget.</li>
+                <li><span>Copywriting:</span> Lead, shape and manage written content for web, social media etc. in close collaboration with our fundraising, science and operations teams. You will keep up to date with industry trends, advise on and adjust the content strategy and editorial line as necessary.</li>
+                <li><span>Editing:</span> Acting as as editor-in-chief for all content, you will ensure quality, clarity and consistency of brand voice, style and tone.</li>
+                <li><span>Website:</span>  Maintain the (soon-to-be-launched) website branding and content, working with the Communications Manager for technical support.  </li>
+                <li><span>SEO/SEA:</span> Manage the SEO/SEA processes and consultants to build organic search traffic over time; ensuring your analysis of results is used to optimize content.</li>
+                <li><span>Analytics and Tracking:</span> You will measure the impact of all content, adjusting where necessary and ensure our messaging is aligned. This will include editorial content audits to identify gaps and inconsistencies.</li>
+            </ul>
+            <p><span>Required skills and qualifications</span></p>
+            <p>You LOVE, LOVE, LOVE writing and storytelling, have outstanding writing skills and storytelling capacities with an editorial eye. Experience of creating Forest and Landscape Restoration (FLR)-related content is strongly preferred. You also have:</p>
+            <ul>
+                <li>A passion for our mission, and commitment to our vision and values.</li>
+                <li>A degree or master in journalism, translation, communication, marketing, advertising (as copywriter), Business Administration or another relevant field and/or at least 5 years of relevant professional experience with a similar role such as Content Manager or Copywriter in an agency.</li>
+                <li>Outstanding spoken and written English, good knowledge of at least a second European language is an asset.</li>
+                <li>The ability to turn rough copy into engaging, inspiring, clear, concise and authoritative FLR-related content for a wide range of audience, encompassing both digital and traditional communications activity.</li>
+                <li>Excellent time management and organizational skills, with the ability to meet deadlines.</li>
+                <li>The understanding of Google algorithms and optimization tools (no technical knowledge is required).</li>
+            </ul>
+            <p>And you are:</p>
+            <ul>
+                <li>A creative thinker combined with a committed and enthusiastic personality.</li>
+                <li>Able to develop and nurture relationships both internally and externally, including complex multi-stakeholder relationships.</li>
+                <li>Solution-oriented with a can-do attitude, meticulous and attentive to details.</li>
+                <li>Able to manage multiple content projects and stakeholder demands simultaneously, including people and agency/freelance management for content creation.</li>
+            </ul>
+            <p><span>Context</span></p>
+            <p>WeForest is an international non-profit association headquartered in Belgium with the mission to conserve and restore the ecological integrity of forests and landscapes, engaging communities to implement and deliver lasting solutions for climate, nature and people. We promote science and best practices in a culture of sharing and inclusion, so that others can replicate and augment what we do.</p>
+            @foreach (var vac in Model)
+            {
+                <p>@vac.Position</p>
+            }
+            <p><span>How to apply</span></p>
+            <p>If you have the expertise to help us promote our voice in the corporate world, raise our profile and increase our presence, we would love to hear from you.</p>
+            <p>Please apply by sending your application in English to recruitment@weforest.org with your CV, a motivation letter and the contact of 2 recent references. Due to the anticipated high number of applicants, only shortlisted candidates will be contacted for an interview. We thank you in advance for your interest.</p>
+            <br />
+            <p style="text-align:center;"><span>"We are the first generation to feel the effect of climate change and the last generation who can do something about it." - Barack Obama</span></p>
+            <br />
+            <p>If you feel up to the challenge, contact us!</p>
+            <a href="mailto:recruitment@weforest.org" class="click">Apply Here</a>
+        </div>
+    </div>
+    <br />
+    <div class="back-button">
+        <a href="/Jobs/Index"><input type="button" value="Back<<" class="back" /></a>
+    </div>
+</body>
+
